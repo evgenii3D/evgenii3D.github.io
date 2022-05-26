@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>Evgeniy CG</title>
+	<meta name="author" content="Evgeniy Dontcov" />
+	<meta name="description" content="portfolio page of the CG artist Evgenii D, webGl" />
+	<meta name="keywords"  content="cg, webgl, portfolio, 3d, animation, three.js, babilon.js, characters, unity, game, 3d models" />
+	<meta name="Resource-type" content="Document" />
+
+
+	<link rel="stylesheet" type="text/css" href="../dist/fullpage.css" />
+	<link rel="stylesheet" type="text/css" href="./preloaderTeaCup.css" />
+	
+	<style>
+
+	/* Style for our header texts
+	* --------------------------------------- */
+	h1{
+		font-size: 5em;
+		font-family: arial,helvetica;
+		color: #000;
+		//margin:0;
+	}
+	.aboutMe {
+		color: #000;
+		line-height: 6px; 
+		margin-bottom: 10px;
+		margin-left: 150px;
+		margin-top: -200px;
+		font-size: 24px;
+		color: #22313F;
+		font-family: Impact;
+	} 
+	.page3 {
+		color: #000;
+		line-height: 6px; 
+		margin-bottom: 10px;
+		margin-left: 150px;
+		margin-top: -200px;
+		font-size: 24px;
+		color: #22313F;
+		font-family: Impact;
+	} 
+	.intro {
+		font-family: Impact,Merriweather bold;
+		color: #000;
+		line-height: 6px; 
+		margin-bottom: 10px;
+		margin-left: 150px;
+		margin-top: -300px;
+		font-size: 35px;
+		color:#22313F;
+		
+	}
+
+	/* Centered texts in each section
+	* --------------------------------------- */
+	.section{
+		font-family: Impact,Merriweather bold;
+		
+		// text-align: left;		
+	}
+
+	/* Overwriting styles for control arrows for slides
+	* --------------------------------------- */
+	.controlArrow.prev {
+		left: 50px;
+	}
+	.controlArrow.next{
+		right: 50px;
+	}
+
+	/* Overwriting styles for navigation bullets
+	* --------------------------------------- */
+	#fp-nav ul li a span, 
+	.fp-slidesNav ul li a span{
+		background: #FAF884;
+	}
+
+
+	/* Bottom menu
+	* --------------------------------------- */
+	#infoMenu li a {
+		color: #000;
+	}
+	
+	/*3d */
+	#my_iframe {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    border: 0;
+	background-image: linear-gradient(to bottom right, #FFA500, #FAF884);
+}
+
+
+	</style>
+
+	<!--[if IE]>
+		<script type="text/javascript">
+			 var console = { log: function() {} };
+		</script>
+	<![endif]-->
+</head>
+<body id="body">
+
+<div id="myiframe"> 
+<iframe id="my_iframe" src="my_awesome_app.html"></iframe>
+</div>
+
+<div id="preloader" class="preloader" >	
+	<svg class="tea" width="37" height="48" viewbox="0 0 37 48" fill="none">
+	 <path d="M27.0819 17H3.02508C1.91076 17 1.01376 17.9059 1.0485 19.0197C1.15761 22.5177 1.49703 29.7374 2.5 34C4.07125 40.6778 7.18553 44.8868 8.44856 46.3845C8.79051 46.79 9.29799 47 9.82843 47H20.0218C20.639 47 21.2193 46.7159 21.5659 46.2052C22.6765 44.5687 25.2312 40.4282 27.5 34C28.9757 29.8188 29.084 22.4043 29.0441 18.9156C29.0319 17.8436 28.1539 17 27.0819 17Z" stroke="var(--secondary)" stroke-width="2"></path>
+  <path d="M29 23.5C29 23.5 34.5 20.5 35.5 25.4999C36.0986 28.4926 34.2033 31.5383 32 32.8713C29.4555 34.4108 28 34 28 34" stroke="var(--secondary)" stroke-width="2"></path>
+  <path id="teabag" fill="var(--secondary)" fill-rule="evenodd" clip-rule="evenodd" d="M16 25V17H14V25H12C10.3431 25 9 26.3431 9 28V34C9 35.6569 10.3431 37 12 37H18C19.6569 37 21 35.6569 21 34V28C21 26.3431 19.6569 25 18 25H16ZM11 28C11 27.4477 11.4477 27 12 27H18C18.5523 27 19 27.4477 19 28V34C19 34.5523 18.5523 35 18 35H12C11.4477 35 11 34.5523 11 34V28Z"></path>
+  <path id="steamL" d="M17 1C17 1 17 4.5 14 6.5C11 8.5 11 12 11 12" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke="var(--secondary)"></path>
+  <path id="steamR" d="M21 6C21 6 21 8.22727 19 9.5C17 10.7727 17 13 17 13" stroke="var(--secondary)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+  </svg>
+</div>
+
+<div id="fullpage" style="display:none;">
+
+	<div class="section " id="section0">
+		<div class="intro">
+			<p>Hello!</p>
+			<p>My name is Evgeniy Dontcov.</p>
+			<p>I am CG artist and 3D developer.</p>
+			<p style="font-size: 20px">_______________________________________</p>
+			<p style="font-size: 20px">This is my portfolio page using webGl</p>
+			<p style="font-size: 20px">technology to work with 3d graphics.</p>
+			<p style="font-size: 20px">Welcome!</p>
+		</div>
+	</div>
+	<div class="section " id="section1">
+		<div class="aboutMe">
+			<p>I was born in Russia,</p>
+			<p>but I have been living in Asia for the last few years.</p>
+			<p><br><br><br><br>I graduated from the Moscow Aviation Institute</p>
+			<p>engineer by profession.</p>
+			<p>Then he worked as an engineer, programmer, designer</p>
+			<p>in various companies.</p>
+			<p><br><br><br><br>Since 2015 I have devoted myself to 3D graphics</p>
+			<p>and started working as a freelancer.</p>			
+		</div>
+	</div>
+	<div class="section" id="section2">
+		<div class="page3">
+			<p>I do 3d models and animation of characters,</p>
+			<p>props and other</p>
+			<p>for games, video, app and 3d printing.</p>
+			<p>Low and hight poly</p>
+			<p>with PBR or hand painted textures</p>
+			<p>....</p>
+			<p>3D app and web sites</p>
+			<p>....</p>
+			<p>contacts: edoncov2@gmail.com</p>
+			<p>....</p>
+			<p>page is under construction</p>
+		</div>
+	</div>
+</div>
+
+<script type="text/javascript" src="../dist/fullpage.js"></script>
+
+
+<script type="text/javascript" id="fullPageScript">
+	window.onload =  goToAnchor();
+	function goToAnchor()
+	{	
+	location.hash = "#" + 'firstPage';
+	}
+	
+    var myFullpage = new fullpage('#fullpage', {
+        anchors: ['firstPage', 'secondPage', '3rdPage'],
+        //sectionsColor: ['#C63D0F', '#1BBC9B', '#7E8F7C'],
+        navigation: false,
+	//	resetSliders: true,
+        navigationPosition: 'right',
+        navigationTooltips: ['First page', 'Second page', 'Third and last page']
+    });
+	
+	
+	
+</script>
+
+</body>
+</html>

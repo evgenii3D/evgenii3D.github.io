@@ -1,0 +1,276 @@
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <tab name="init" type="InitTab" active="false" scrollx="680.0000000000001" scrolly="323.50000000000006" scale="0.9">
+    <block xmlns="https://developers.google.com/blockly/xml" type="initSettings" id="F9#g(eq;^E8P)b[E(~i," x="-690" y="-330">
+      <field name="LOAD_COMP_ASSETS">FALSE</field>
+      <field name="FULLSCREEN">TRUE</field>
+      <field name="BKG_TRANSPARENCY">TRUE</field>
+      <field name="PRESERVE_DRAW_BUF">FALSE</field>
+      <field name="FADE_ANNOTATIONS">TRUE</field>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="initPreloader" id="Ht*IK.Yv.n/a}I%;zhG(" x="-690" y="-130">
+      <statement name="DO_START">
+        <block type="setHTMLElemStyle" id="s4w*s?%Jv2HXO[}ZVvY2">
+          <field name="PROPERTY">display</field>
+          <field name="PARENT">TRUE</field>
+          <value name="VALUE">
+            <block type="text" id="jD[F_Ff@JmZgn`tJDDJC">
+              <field name="TEXT">none</field>
+            </block>
+          </value>
+          <value name="ID">
+            <shadow type="text" id="N3y:~@vDG,VoL6paeG+P">
+              <field name="TEXT">fullpage</field>
+            </shadow>
+          </value>
+          <next>
+            <block type="setHTMLElemStyle" id="$}pH(2u[e,WbwAb_JgOD">
+              <field name="PROPERTY">display</field>
+              <field name="PARENT">TRUE</field>
+              <value name="VALUE">
+                <block type="text" id="s:TAsssBJETy0{[_tNOa">
+                  <field name="TEXT">block</field>
+                </block>
+              </value>
+              <value name="ID">
+                <shadow type="text" id="vJW52B#mzpox5(ILf-#I">
+                  <field name="TEXT">preloader</field>
+                </shadow>
+              </value>
+            </block>
+          </next>
+        </block>
+      </statement>
+      <statement name="DO_END">
+        <block type="setHTMLElemStyle" id="%gtQO^|%@S^7Xe}k+C3q">
+          <field name="PROPERTY">display</field>
+          <field name="PARENT">TRUE</field>
+          <value name="VALUE">
+            <block type="text" id=";%;Nc/6:a~/ix7OUwib+">
+              <field name="TEXT">none</field>
+            </block>
+          </value>
+          <value name="ID">
+            <shadow type="text" id="iM]HiMz[M7@?J9{Y,vTj">
+              <field name="TEXT">preloader</field>
+            </shadow>
+          </value>
+          <next>
+            <block type="setHTMLElemStyle" id="HzjDlEwH#P#!5RG`)Ju7">
+              <field name="PROPERTY">display</field>
+              <field name="PARENT">TRUE</field>
+              <value name="VALUE">
+                <block type="text" id="I9;LYor=bL`=FTH?{bd?">
+                  <field name="TEXT">block</field>
+                </block>
+              </value>
+              <value name="ID">
+                <shadow type="text" id="zb{)qhpc9yR$_wvDO9;P">
+                  <field name="TEXT">fullpage</field>
+                </shadow>
+              </value>
+            </block>
+          </next>
+        </block>
+      </statement>
+    </block>
+  </tab>
+  <tab name="main" type="MainTab" active="true" scrollx="598.8716929709153" scrolly="310.5554866656694" scale="0.7051735498216136">
+    <variables xmlns="https://developers.google.com/blockly/xml">
+      <variable id="~BQwBH1JZ]q_|-WO/Dvs" type="">pageState</variable>
+      <variable id="A^d*_*@AEgv4n`bql]P{" type="">previosPageState</variable>
+      <variable id="m,F+Q^4[c+*fVI8b=IXk" type="">myFullpage</variable>
+    </variables>
+    <block xmlns="https://developers.google.com/blockly/xml" type="variables_set" id="j@pCBVeq?xJVUQ[S8jEI" x="-650" y="-330">
+      <field name="VAR" id="~BQwBH1JZ]q_|-WO/Dvs">pageState</field>
+      <value name="VALUE">
+        <block type="text" id="`AxF}m[@kh_m}9JcC3%,">
+          <field name="TEXT">fp-scroll-mac fp-viewing-firstPage</field>
+        </block>
+      </value>
+      <next>
+        <block type="variables_set" id="5Nu%CquQ%3Gc#_,=lq7Z">
+          <field name="VAR" id="A^d*_*@AEgv4n`bql]P{">previosPageState</field>
+          <value name="VALUE">
+            <block type="text" id="EuqB%~-6S(B{ITs|GLjg">
+              <field name="TEXT">fp-scroll-mac fp-viewing-firstPage</field>
+            </block>
+          </value>
+        </block>
+      </next>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="console.log" id="bN5Xbg2#FC]t8IZ@ZV0;" x="-650" y="-210">
+      <value name="VALUE">
+        <shadow type="text" id="phnLL{fg01!K,M%Rk]-t">
+          <field name="TEXT">222222222</field>
+        </shadow>
+        <block type="variables_get" id="S4?7^(M_pWFsNg`j^a!#">
+          <field name="VAR" id="A^d*_*@AEgv4n`bql]P{">previosPageState</field>
+        </block>
+      </value>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="console.log" id="fXOmg8CXhcK?y{Wr!(sG" x="-650" y="-150">
+      <value name="VALUE">
+        <shadow type="text" id="L[k:4?[^n:J1?Mt]PXhi">
+          <field name="TEXT"/>
+        </shadow>
+        <block type="variables_get" id="*8Cq!!db7y(^Lc[,DbIh">
+          <field name="VAR" id="m,F+Q^4[c+*fVI8b=IXk">myFullpage</field>
+        </block>
+      </value>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="eventHTMLElem" id="ptr-~j~cAvKXVaa2(~j5" x="-630" y="-30">
+      <field name="EVENT">wheel</field>
+      <field name="PARENT">TRUE</field>
+      <value name="ID">
+        <shadow type="text" id="8w_Kkr;D1E..sa4u@{9D">
+          <field name="TEXT">body</field>
+        </shadow>
+        <block type="DOMObjectSelector" id="bCe;F|YJI@qT+anPmaoT">
+          <field name="DOM_OBJECT">BODY</field>
+        </block>
+      </value>
+      <statement name="DO">
+        <block type="setTimeout" id="Q/=WJ(iVkQaP:LNworfv">
+          <value name="VALUE">
+            <shadow type="math_number" id="D*CbD4ifb(.1;8v=5Ul@">
+              <field name="NUM">0.1</field>
+            </shadow>
+          </value>
+          <statement name="DO">
+            <block type="controls_if" id="[$n-v-fy#_f,!ln]SBv.">
+              <value name="IF0">
+                <block type="logic_compare" id="dMd~hk9aPlT:t7QYDyr%">
+                  <field name="OP">EQ</field>
+                  <value name="A">
+                    <block type="getHTMLElemAttribute" id="f!P6nJ~z3?-nP^hu?0=C">
+                      <field name="ATTRIBUTE">className</field>
+                      <field name="PARENT">TRUE</field>
+                      <value name="ID">
+                        <shadow type="text" id="kTX@1_c1_-4*s;6A2gT.">
+                          <field name="TEXT">body</field>
+                        </shadow>
+                      </value>
+                    </block>
+                  </value>
+                  <value name="B">
+                    <block type="text" id="bCxW+TVa3zY7$Ec^Enwi">
+                      <field name="TEXT">fp-scroll-mac fp-viewing-firstPage</field>
+                    </block>
+                  </value>
+                </block>
+              </value>
+              <statement name="DO0">
+                <block type="console.log" id="|IN7Uqb}*RKd/1ANE0zz">
+                  <value name="VALUE">
+                    <shadow type="text" id="%%nZ#zx61gT8YA;#wS[J">
+                      <field name="TEXT">11111111</field>
+                    </shadow>
+                  </value>
+                </block>
+              </statement>
+              <next>
+                <block type="controls_if" id="D{Gpn$aOI,E/]t#}_QqS">
+                  <value name="IF0">
+                    <block type="logic_operation" id="9QIn,D`_%~9|.[l]/ObU">
+                      <field name="OP">AND</field>
+                      <value name="A">
+                        <block type="logic_compare" id="Cpi27Ga6bMhMTShEsI]p">
+                          <field name="OP">EQ</field>
+                          <value name="A">
+                            <block type="getHTMLElemAttribute" id="VC%szX:U,R9fydu@4?4y">
+                              <field name="ATTRIBUTE">className</field>
+                              <field name="PARENT">TRUE</field>
+                              <value name="ID">
+                                <shadow type="text" id="EWxS,)QL@QY4ZCNh=M|y">
+                                  <field name="TEXT">body</field>
+                                </shadow>
+                              </value>
+                            </block>
+                          </value>
+                          <value name="B">
+                            <block type="text" id="XlfvYgBLVc!_t;w`~0vb">
+                              <field name="TEXT">fp-scroll-mac fp-viewing-secondPage-0</field>
+                            </block>
+                          </value>
+                        </block>
+                      </value>
+                      <value name="B">
+                        <block type="logic_compare" id="?+Ja0#x`z+uNvE.wD~o!">
+                          <field name="OP">EQ</field>
+                          <value name="A">
+                            <block type="variables_get" id="BxxK%svPJ+T`TbBQVP6f">
+                              <field name="VAR" id="A^d*_*@AEgv4n`bql]P{">previosPageState</field>
+                            </block>
+                          </value>
+                          <value name="B">
+                            <block type="text" id="|XWUOZzLsyd%,q{(]3Z}">
+                              <field name="TEXT">fp-scroll-mac fp-viewing-firstPage</field>
+                            </block>
+                          </value>
+                        </block>
+                      </value>
+                    </block>
+                  </value>
+                  <statement name="DO0">
+                    <block type="variables_set" id="V1th]ta?m-^ME;aO52lx">
+                      <field name="VAR" id="A^d*_*@AEgv4n`bql]P{">previosPageState</field>
+                      <value name="VALUE">
+                        <block type="text" id="Rt3Ymil_l)9S{.NZ5+r!">
+                          <field name="TEXT">fp-scroll-mac fp-viewing-secondPage-0</field>
+                        </block>
+                      </value>
+                      <next>
+                        <block type="console.log" id="(qF#pW+i4xf3ug(@tyl?">
+                          <value name="VALUE">
+                            <shadow type="text" id="NDX^C?I(QgI_w.S%km/f">
+                              <field name="TEXT">1-2</field>
+                            </shadow>
+                          </value>
+                        </block>
+                      </next>
+                    </block>
+                  </statement>
+                  <next>
+                    <block type="controls_if" id=":sA%F=n_R`SvwY(8vmK*">
+                      <value name="IF0">
+                        <block type="logic_compare" id="lp!K`01]!2?o=o|#|V?]">
+                          <field name="OP">EQ</field>
+                          <value name="A">
+                            <block type="getHTMLElemAttribute" id="r)]mtAri@lFV{/3Vp1,.">
+                              <field name="ATTRIBUTE">className</field>
+                              <field name="PARENT">TRUE</field>
+                              <value name="ID">
+                                <shadow type="text" id="lCrB5vmgJ4a(xja%`$8B">
+                                  <field name="TEXT">body</field>
+                                </shadow>
+                              </value>
+                            </block>
+                          </value>
+                          <value name="B">
+                            <block type="text" id="Wb5]B%p08!jdQ@Mt-BuL">
+                              <field name="TEXT">fp-scroll-mac fp-viewing-3rdPage</field>
+                            </block>
+                          </value>
+                        </block>
+                      </value>
+                      <statement name="DO0">
+                        <block type="console.log" id="JS/|]6+jgHHTzPz*^,zt">
+                          <value name="VALUE">
+                            <shadow type="text" id="t*?e#X/$vV@eU+,uamR=">
+                              <field name="TEXT">33333333</field>
+                            </shadow>
+                          </value>
+                        </block>
+                      </statement>
+                    </block>
+                  </next>
+                </block>
+              </next>
+            </block>
+          </statement>
+        </block>
+      </statement>
+    </block>
+  </tab>
+  <editorsettings viewport-x="1203.6000610351562" viewport-y="28" viewport-w="314.375" viewport-h="361.5" viewport-hidden="false" toolbox-library-mode="false" toolbox-minimized-mode="false"></editorsettings>
+</xml>
