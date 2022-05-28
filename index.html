@@ -95,8 +95,16 @@
     height: 100%;
     border: 0;
 	background-image: linear-gradient(to bottom right, #FFA500, #FAF884);
+	 transition: all 1.5s;
 }
 
+.scrollImage {
+	position: absolute;
+    bottom: 10px;
+	display: block;
+	margin-left: 48%;
+    margin-right: auto;
+}
 
 	</style>
 
@@ -108,9 +116,9 @@
 </head>
 <body id="body">
 
-<div id="myiframe"> 
+ 
 <iframe id="my_iframe" src="my_awesome_app.html"></iframe>
-</div>
+
 
 <div id="preloader" class="preloader" >	
 	<svg class="tea" width="37" height="48" viewbox="0 0 37 48" fill="none">
@@ -134,6 +142,7 @@
 			<p style="font-size: 20px">technology to work with 3d graphics.</p>
 			<p style="font-size: 20px">Welcome!</p>
 		</div>
+		<div class="scrollImage"><img src="scrollDown.png"  width="34" height="44"></div>
 	</div>
 	<div class="section " id="section1">
 		<div class="aboutMe">
@@ -146,6 +155,7 @@
 			<p><br><br><br><br>Since 2015 I have devoted myself to 3D graphics</p>
 			<p>and started working as a freelancer.</p>			
 		</div>
+		<div class="scrollImage"><img src="scrollTopDown.png"  width="34" height="44"></div>
 	</div>
 	<div class="section" id="section2">
 		<div class="page3">
@@ -158,9 +168,9 @@
 			<p>3D app and web sites</p>
 			<p>....</p>
 			<p>contacts: edoncov2@gmail.com</p>
-			<p>....</p>
-			<p>page is under construction</p>
+			
 		</div>
+		<div class="scrollImage"><img src="scrollTop.png"  width="34" height="44"></div>
 	</div>
 </div>
 
